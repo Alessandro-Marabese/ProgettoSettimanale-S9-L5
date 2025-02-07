@@ -9,19 +9,19 @@ const MyNavbar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto ">
-          <Nav.Link href="#" className="text-white">
+          <Nav.Link href="#" id="Home">
             Home
           </Nav.Link>
-          <Nav.Link href="#" className="text-white">
+          <Nav.Link href="#" id="TV-Shows">
             TV Shows
           </Nav.Link>
-          <Nav.Link href="#" className="text-white">
+          <Nav.Link href="#" id="Movies">
             Movies
           </Nav.Link>
-          <Nav.Link href="#" className="text-white">
+          <Nav.Link href="#" id="Recently-Added">
             Recently Added
           </Nav.Link>
-          <Nav.Link href="#" className="text-white">
+          <Nav.Link href="#" id="My-List">
             My List
           </Nav.Link>
         </Nav>
