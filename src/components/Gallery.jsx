@@ -6,7 +6,7 @@ class Gallery extends Component {
   };
   getMovies = async () => {
     try {
-      const response = await fetch("http://www.omdbapi.com/?apikey=314fa703&s=Star%20Wars");
+      const response = await fetch(`http://www.omdbapi.com/?apikey=314fa703&s=${this.props.movies}`);
       if (response.ok) {
         const movies = await response.json();
         this.setState({ movies });
@@ -24,15 +24,18 @@ class Gallery extends Component {
 
   render() {
     return (
-      <Row>
-        {this.state.movies.Search.map((movie) => {
-          return (
-            <Col key={movie.imdbID}>
-              <img src={movie.Poster} alt={movie.Title} />
-            </Col>
-          );
-        })}
-      </Row>
+      <>
+        <h4></h4>
+        <Row>
+          {this.state.movies.Search.map((movie) => {
+            return (
+              <Col key={movie.imdbID}>
+                <img src={movie.Poster} alt={movie.Title} />
+              </Col>
+            );
+          })}
+        </Row>
+      </>
     );
   }
 }
