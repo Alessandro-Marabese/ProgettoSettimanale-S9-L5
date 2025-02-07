@@ -1,4 +1,5 @@
-import { Component, Row, Col } from "react";
+import { Component } from "react";
+import { Row, Col } from "react-bootstrap";
 
 class Gallery extends Component {
   state = {
@@ -25,12 +26,11 @@ class Gallery extends Component {
   render() {
     return (
       <>
-        <h4></h4>
-        <Row>
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
           {this.state.movies.Search.map((movie) => {
             return (
               <Col key={movie.imdbID}>
-                <img src={movie.Poster} alt={movie.Title} />
+                <img src={movie.Poster} alt={movie.Title} className="img-fluid" />
               </Col>
             );
           })}

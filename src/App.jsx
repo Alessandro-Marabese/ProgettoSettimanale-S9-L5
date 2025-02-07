@@ -8,12 +8,14 @@ const App = () => {
   return (
     <>
       <MyNavbar />
-      <h4>Star Wars</h4>
-      <Gallery movies="Star%20Wars" />
-      <h4>Harry Potter</h4>
-      <Gallery movies="Harry%20Potter" />
-      <h4>Lord of the Rings</h4>
-      <Gallery movies="Lord%20of%20the%20Rings" />
+      <div className="container-fluid">
+        <h4>Star Wars</h4>
+        <Gallery movies="Star%20Wars" />
+        <h4>Harry Potter</h4>
+        <Gallery movies="Harry%20Potter" />
+        <h4>Lord of the Rings</h4>
+        <Gallery movies="Lord%20of%20the%20Rings" />
+      </div>
       <MyFooter />
     </>
   );

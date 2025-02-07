@@ -42,7 +42,7 @@ const MyFooter = () => {
               </svg>
             </Col>
           </Row>
-          <Row>
+          <Row className=" row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg 4">
             <Col>
               <Row>
                 <Col className="footer-links">
