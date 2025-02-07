@@ -27,7 +27,7 @@ class Gallery extends Component {
     return (
       <>
         <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
-          {this.state.movies.Search.map((movie) => {
+          {this.state.movies.Search.slice(0, 6).map((movie) => {
             return (
               <Col key={movie.imdbID}>
                 <img src={movie.Poster} alt={movie.Title} className="img-fluid" />
